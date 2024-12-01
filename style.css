@@ -1,0 +1,483 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(190, 189, 189);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  font-style: italic;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+#personal-Information-div {
+  background-color: aqua;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 600px;
+  height: auto;
+  margin-top: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#personal-Information {
+  display: grid;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+#togglePersonalInformation,
+#toggleProfessionalSummary,
+#addSkills,
+#addExperience,
+#addEducation,
+#toggleSkills,
+#toggleEducationDetails,
+#toggleExperience,
+#generateResumeButton {
+  margin: auto;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  width: 250;
+  height: 30px;
+  background-color: rgb(96, 209, 96);
+  color: red;
+  border: 2px solid rgb(20, 65, 20);
+  border-radius: 5px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: ease-in 0.5s;
+}
+#professionalSummary {
+  background-color: rgb(212, 209, 209);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 600px;
+  height: 150px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  margin-top: 20px;
+}
+
+textarea {
+  height: 400px;
+  width: 400px;
+}
+
+#professionalSummaryDiv {
+  background-color: aqua;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 600px;
+  height: auto;
+  margin-top: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+h2,
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+#skillsDiv {
+  background-color: aqua;
+  display: grid;
+  align-items: flex-start;
+  margin: auto;
+  width: 600px;
+  height: auto;
+  margin-top: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.skillsDetails {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+#educationDiv {
+  background-color: aqua;
+  display: grid;
+  align-items: flex-start;
+  margin: auto;
+  width: 600px;
+  height: auto;
+  margin-top: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.bachelorDegree,
+.intermediate,
+.matriculation {
+  display: grid;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.masterDegree {
+  display: grid;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.resumeOutput1 {
+  display: grid;
+  background: linear-gradient(rgb(136, 136, 136), rgb(185, 185, 185));
+  border: 2px solid black;
+  width: 800px;
+  max-height: max-content;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 20px;
+  box-shadow: 10px 4px 10px rgba(19, 17, 17, 0.7);
+}
+
+.congratulations {
+  display: grid;
+}
+
+.leftPersonalInfo {
+  display: grid;
+  width: 250px;
+  margin: auto;
+  margin-top: 0;
+
+  font-family: "Times New Roman", Times, serif;
+  text-wrap: wrap;
+  color: black;
+  height: max-content;
+}
+
+.profileImage {
+  width: 250px;
+  margin: auto;
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+  min-height: 50px;
+}
+.personalInfoSumm {
+  display: grid;
+  padding-left: 20px;
+  margin-top: 0;
+  height: max-content;
+  padding-right: 20px;
+  max-width: 250px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.keySkills {
+  display: grid;
+  margin: auto;
+  margin-left: 0;
+  max-width: 250px;
+  height: max-content;
+  text-wrap: wrap;
+}
+
+.keySkills > h2 {
+  background-color: rgb(155, 155, 155);
+  width: 250px;
+}
+
+.keySkills > ul > li {
+  margin-top: 40px;
+  max-width: 250px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  padding-right: 20px;
+  list-style: none;
+  gap: 2px;
+}
+
+.personalInfoSummName {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.highlights {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mainPortion {
+  display: flex;
+  width: 800px;
+  min-height: max-content;
+  background-color: rgb(207, 207, 207);
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.rightProfessionalInfo {
+  display: grid;
+
+  width: 550px;
+  height: max-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 0;
+}
+
+.professionalSummaryDetailed {
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  min-height: 100px;
+}
+
+.experienceDetailsEnteredDiv {
+  display: grid;
+  gap: 0;
+  margin: auto;
+  margin-top: 0;
+}
+
+.educationDetailsEnteredDiv {
+  display: grid;
+  gap: 0;
+  margin: auto;
+
+  margin-top: 0;
+  min-width: 50px;
+}
+
+.educationDivInOutput {
+  gap: 0;
+  max-height: max-content;
+}
+
+.experienceDivInOutput {
+  gap: 0;
+  max-height: max-content;
+}
+
+.experienceHeadingInOutput,
+.educationHeadingInOutput {
+  padding: 0;
+  font-size: 30px;
+  color: rgb(0, 66, 0);
+  font-size: 20px;
+  margin-top: 0;
+  margin-left: 0;
+  border-bottom: 3px solid rgb(0, 66, 0);
+  height: 40px;
+
+  margin: 0;
+}
+.experienceHeadingInOutput > h2 {
+  margin: auto;
+  padding-left: 0;
+}
+
+.organizationNameDiv {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-wrap: wrap;
+  font: lighter;
+  color: black;
+  margin: 0;
+}
+
+.startAndEndDate {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  color: black;
+}
+
+.designationInOutput {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-wrap: wrap;
+  font-weight: bolder;
+  color: black;
+}
+
+.profilePicture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: 2px grey;
+  border-color: black;
+  box-shadow: 5px 10px 8px 2px rgba(36, 30, 30, 0.9);
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+#experienceDiv {
+  background-color: aqua;
+  display: grid;
+  align-items: flex-start;
+  margin: auto;
+  width: 600px;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.firstExperienceDiv {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+}
+
+input {
+  width: 300px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.experienceMainDiv {
+  position: relative;
+}
+.experienceMainDiv:hover::after {
+  content: "Write Latest experience first";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: black; /* Text color */
+  white-space: nowrap; /* Prevents text from wrapping */
+  font-size: 14px; /* Adjust font size if needed */
+}
+
+.jobDescriptionDetails > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.firstJobJD,
+.firstJobJD1,
+.firstJobJD2,
+.firstJobJD3,
+.firstJobJD4 {
+  border: 2px solid black;
+  height: 40px;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-wrap: wrap;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10;
+}
+.unoederledListInHTMLJobDescription > li {
+  list-style: none;
+}
+
+ul > li {
+  list-style: none;
+  text-wrap: wrap;
+  text-align: justify;
+  font-size: medium;
+}
+
+#buttonsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#buttonsContainer button {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: gray;
+  color: black;
+  border: 2px solid;
+}
+
+#buttonsContainer button:hover {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  transition: 0.5s;
+}

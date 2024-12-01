@@ -1,0 +1,183 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="header">
+    <h1>Welcome to my Resume Generator</h1>
+  </div>
+
+  <form id="resumeForm">
+    <div id="personal-Information-div">
+      <h2 class="heading">Personal Information</h2>
+      <div id="personal-Information">
+        <div class="name">
+          <label for="Name">Name</label><br />
+          <input type="text" placeholder="Enter your Name" name="name" id="name" required />
+          <br /><br />
+        </div>
+        <div class="highlight">
+          <label for="highlight">Featured Designation</label> <br />
+          <input type="text" placeholder="Enter your proposed title" name="highlight" id="highlight" required />
+
+          <br /><br />
+        </div>
+        <div class="address">
+          <label for="address">Address</label> <br />
+          <input type="text" placeholder="Enter your Address" name="address" id="address" required /><br /><br />
+        </div>
+        <div class="contact">
+          <label for="contact">Contact</label> <br />
+          <input type="text" placeholder="Enter your Mobile #" name="contact" id="contact" required /><br /><br />
+        </div>
+        <div class="email">
+          <label for="email">Email</label> <br />
+          <input type="text" placeholder="Enter your email" name="email" id="email" required /><br /><br />
+        </div>
+        <div class="city">
+          <label for="city">City</label> <br />
+          <input type="text" placeholder="Enter your city" name="city" id="city" required /><br /><br />
+        </div>
+
+        <div class="addPicture">
+          <label for="picture">
+            <input type="file" name="picture" id="picture" />
+            <br /><br />
+          </label>
+        </div>
+      </div>
+    </div>
+    <button id="togglePersonalInformation" type="button">
+      Hide Professional Information
+    </button>
+
+    <div id="professionalSummaryDiv">
+      <h2>Professional Summary</h2>
+      <div class="professionalSummary">
+        <textarea name="professionalSummary" id="professionalSummary"
+          placeholder="Enter your professional Summary"></textarea>
+        <br />
+      </div>
+    </div>
+    <button id="toggleProfessionalSummary" type="button">
+      Hide Professional Summary
+    </button>
+
+    <div id="skillsDiv">
+      <h2>Skills</h2>
+      <div class="skillsDetails">
+        <label for="skill" class="skill">Skill 1 </label>
+        <input type="text" placeholder="Skill 1" class="skill1" required />
+        <label for="skill" class="skill">Skill 2 </label>
+        <input type="text" placeholder="Skill 2" class="skill2" req />
+        <label for="skill" class="skill">Skill 3 </label>
+        <input type="text" placeholder="Skill 3" class="skill3" />
+        <label for="skill" class="skill">Skill 4 </label>
+        <input type="text" placeholder="Skill 4" class="skill4" />
+      </div>
+      <button id="addSkills" type="button">Add Skills</button>
+    </div>
+    <button id="toggleSkills" type="button">Hide Skills Menu</button>
+
+    <div id="educationDiv">
+      <h2>Education</h2>
+      <div class="educationDetails">
+        <div class="matriculation">
+          <label for="matriculationDegreeName" class="matriculationDegreeName">Degree</label>
+          <input type="text" class="degreeNameMatric" placeholder="Degree Name">
+          <label for="instituteName" class="instituteName">School / College / University Name</label>
+          <input type="text" class="instituteNameMatric" placeholder="Institute Name">
+          <label for="matricDegreeStartYear" class="matricDegreeStartYear">Start Year</label>
+          <input type="date" class="startYearMatric">
+          <label for="matricDegreeEndYear" class="matricDegreeEndYear">End Year</label>
+          <input type="date" class="endYearMatric"> <br>
+        </div>
+
+      </div>
+
+      <button id="addEducation" type="button">Add Education</button>
+    </div>
+
+    <button id="toggleEducationDetails" type="button">
+      Hide Education Menu
+    </button>
+
+
+    <div id="experienceDiv">
+      <h2 class="experienceMainDiv">Experience</h2>
+      <div class="experienceDetails">
+        <div class="firstExperienceDiv">
+          <label for="firstExperience" class="firstExperience">Employer</label>
+          <input type="text" class="firstOrganization" placeholder="Organization Name">
+
+          <label for="firstOrganizationDesig" class="firstOrganizationDesig">Job title</label>
+          <input type="text" class="firstOrganizationDesignation" placeholder="Designation">
+
+          <label for="jobStartDate1stOrganization" class="jobStartDate1stOrganization">Start Date</label>
+          <input type="date" class="jobStartDate1">
+
+          <label for="jobEndDate1stOrganization" class="jobEndDate1stOrganization">End Year</label>
+          <input type="date" class="jobEndDate1">
+
+          <h4>Job Description</h4>
+          <div class="jobDescriptionDetails">
+            <ul class="unoederledListInHTMLJobDescription">
+
+              <li><input name="firstJobJD" class="firstJobJD"
+                  placeholder="Enter brief job description (Required)"></input></li>
+              <li><input name="firstJobJD1" class="firstJobJD1"
+                  placeholder="Enter brief job description (Required)"></input></li>
+              <li><input name="firstJobJD2" class="firstJobJD2"
+                  placeholder="Enter brief job description (Optional)"></input></li>
+              <li><input name="firstJobJD3" class="firstJobJD3"
+                  placeholder="Enter brief job description (Optional)"></input></li>
+              <li><input name="firstJobJD4" class="firstJobJD4"
+                  placeholder="Enter brief job description (Optional)"></input></li>
+
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+      <button id="addExperience" type="button">Add Experience</button>
+
+    </div>
+
+    <button id="toggleExperience" type="button">Hide Experience Menu</button>
+
+
+    <!-- <div id="certification">
+        <h2>Certification</h2>
+        <div class="certificationDetails">
+          <label for="course" class="course">Course </label>
+          <input type="text" placeholder="Course Name" class="courseName" /> <br>
+          <label for="skill" class="skill">Institution </label>
+          <input type="text" placeholder="Institution Name" class="skill2" />
+        </div>
+        <button id="addCertification" type="button">Add Course</button>
+      </div>
+      <button id="toggleCertification" type="button">Hide Courses Menu</button> -->
+
+
+
+
+
+    <button id="generateResumeButton" type="submit">Generate Resume</button>
+
+  </form>
+
+  <div class="resumeOutput">
+
+  </div>
+
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
